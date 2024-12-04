@@ -8,7 +8,8 @@ namespace StormKitty
     internal sealed class Libs
     {
         
-        public static string ZipLib = "https://raw.githubusercontent.com/LimerBoy/StormKitty/master/StormKitty/stub/packages/DotNetZip.1.13.8/lib/net40/DotNetZip.dll";
+        public static string ZipLib = "https://github.com/swagkarna/StormKitty/raw/refs/heads/master/StormKitty/stub/packages/DotNetZip.1.13.8/lib/net40/DotNetZip.dll";
+        
         public static bool LoadRemoteLibrary(string library)
         {
             string dll = Path.Combine(Path.GetDirectoryName(Startup.ExecutablePath), Path.GetFileName(new Uri(library).LocalPath));
